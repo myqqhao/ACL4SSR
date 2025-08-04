@@ -1,0 +1,23 @@
+[custom]
+
+enable_rule_generator=true
+overwrite_original_rules=true
+
+ruleset=🎬 YouTube,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/YouTube.list
+ruleset=🤖 OpenAI,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/OpenAI.list
+ruleset=🚫 去广告,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list
+ruleset=🌍 全球流量,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Default.list
+
+custom_proxy_group=🚀 节点选择`select`.*
+custom_proxy_group=♻️ 自动选择`url-test`.*`http://www.gstatic.com/generate_204`300,,50
+custom_proxy_group=🎬 YouTube`select`[]♻️ 自动选择`[]🚀 节点选择
+custom_proxy_group=🤖 OpenAI`select`[]♻️ 自动选择`[]🚀 节点选择
+custom_proxy_group=🚫 去广告`select`[]DIRECT`[]🚀 节点选择
+custom_proxy_group=🌍 全球流量`select`[]♻️ 自动选择`[]🚀 节点选择
+
+rule_set_mapping=🎬 YouTube,🎬 YouTube
+rule_set_mapping=🤖 OpenAI,🤖 OpenAI
+rule_set_mapping=🚫 去广告,🚫 去广告
+rule_set_mapping=🌍 全球流量,🌍 全球流量
+
+rule_final=🌍 全球流量
