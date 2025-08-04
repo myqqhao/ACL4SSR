@@ -1,0 +1,31 @@
+# 广告域名拦截规则
+DOMAIN-SUFFIX,ad.com
+DOMAIN-SUFFIX,ads.com
+DOMAIN-SUFFIX,doubleclick.net
+DOMAIN-SUFFIX,googlesyndication.com
+DOMAIN-SUFFIX,googleadservices.com
+DOMAIN-SUFFIX,trackingserver.com
+
+DOMAIN,ads.example.com
+DOMAIN,track.adnetwork.com
+
+DOMAIN-KEYWORD,ad
+DOMAIN-KEYWORD,tracker
+
+# 🎯 YouTube 广告域名
+DOMAIN-SUFFIX,doubleclick.net
+DOMAIN-SUFFIX,googleadservices.com
+DOMAIN-SUFFIX,googlesyndication.com
+DOMAIN-SUFFIX,ad.youtube.com
+DOMAIN-SUFFIX,pagead2.googlesyndication.com
+DOMAIN-SUFFIX,pagead-googlehosted.l.google.com
+
+# 🎯 通用广告拦截关键字（可选，略激进）
+DOMAIN-KEYWORD,ad
+DOMAIN-KEYWORD,ads
+DOMAIN-KEYWORD,tracker
+DOMAIN-KEYWORD,logservice
+DOMAIN-KEYWORD,analytics
+
+# 可选 IP 段拦截（需要 Clash 支持 IP-CIDR）
+# IP-CIDR,203.0.113.0/24,no-resolve
